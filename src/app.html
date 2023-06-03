@@ -10,3 +10,17 @@
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
+
+<style>
+	html,
+	body {
+		height: 100vh;
+		background-color: black;
+		overflow: hidden;
+		font-family: 'Noto Sans', sans-serif;
+	}
+
+	body:has(#sound-toggle[data-toggled='true']) #sound-message {
+		opacity: 0;
+	}
+</style>
